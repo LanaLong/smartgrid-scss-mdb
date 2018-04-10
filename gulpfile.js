@@ -9,6 +9,44 @@ const minify = require('gulp-minify');
 const rename = require('gulp-rename');
 const imagemin = require('gulp-imagemin');
 
+// from smartgriid ///////////////////////////////////////////////
+const cleanCSS = require('gulp-clean-css');
+const sourcemaps = require('gulp-sourcemaps');
+/* const less = require('gulp-less'); */
+const gcmq = require('gulp-group-css-media-queries');
+const smartgrid = require('smart-grid');
+
+// config /////////////////////////////////////////////////////////
+const config = {
+    root: './dist/',
+    // html: {
+    //     src: 'index.html'
+    // },
+    // css_less: {
+    //     watch: 'precss/**/*.less', // прослушка и источник это разные файлы
+    //     src: 'precss/+(styles|styles-per|styles-ie9).less',
+    //     dest: './dist/css' // было dest: 'css'
+    // },
+    smartgrid: {
+        src: 'smartgrid.js',
+        dest: 'scss'
+    }
+};
+
+// building smartgriid /////////////////////////////////////////////
+gulp.task('grid', function(){
+    delete require.cache[require.resolve('./' + config.smartgrid.src)];
+    let options = require('./' + config.smartgrid.src);
+    smartgrid(config.root + config.smartgrid.dest, options);
+
+    options.offset = '3.15%';
+    options.breakPoints.xxs.offset = '1%';
+    options.filename = 'smart-grid-per';
+    smartgrid(config.root + config.smartgrid.dest, options);
+});
+
+
+
 // CSS Tasks
 gulp.task('css-compile', function() {
   gulp.src('scss/**/*.scss')
