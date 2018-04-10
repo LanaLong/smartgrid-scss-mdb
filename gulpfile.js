@@ -29,7 +29,7 @@ const config = {
     // },
     smartgrid: {
         src: 'smartgrid.js',
-        dest: 'scss'
+        dest: 'scss/smart-grid'
     }
 };
 
@@ -37,12 +37,12 @@ const config = {
 gulp.task('grid', function(){
     delete require.cache[require.resolve('./' + config.smartgrid.src)];
     let options = require('./' + config.smartgrid.src);
-    smartgrid(config.root + config.smartgrid.dest, options);
+    smartgrid(config.smartgrid.dest, options);
 
-    options.offset = '3.15%';
-    options.breakPoints.xxs.offset = '1%';
-    options.filename = 'smart-grid-per';
-    smartgrid(config.root + config.smartgrid.dest, options);
+    // options.offset = '3.15%';
+    // options.breakPoints.xxs.offset = '1%';
+    // options.filename = 'smart-grid-per';
+    // smartgrid(config.smartgrid.dest, options);
 });
 
 
