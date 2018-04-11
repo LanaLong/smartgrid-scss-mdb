@@ -118,8 +118,8 @@ gulp.task('live-server', function() {
 gulp.task('mdb-go', function() {
   gulp.start('live-server');
   gulp.watch("scss/**/*.scss", ['css-compile']);
-  gulp.watch(["dist/css/*.css", "!dist/css/*.min.css"], ['css-minify']);
-  gulp.watch("js/**/*.js", ['js-build']);
-  gulp.watch("dist/js/mdb.js", ['js-minify']);
+  // gulp.watch(["dist/css/*.css", "!dist/css/*.min.css"], ['css-minify']);
+  // gulp.watch("js/**/*.js", ['js-build']);
+  // gulp.watch("dist/js/mdb.js", ['js-minify']);
   gulp.watch("**/*", {cwd: './img/'}, ['img-compression']);
 });
