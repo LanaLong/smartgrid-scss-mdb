@@ -1,116 +1,121 @@
 @import "project.scss";
 @import "smart-grid/smart-grid.scss";
 
-body {
-    // background: $color_black;
-}
+// body {
+//     background: $color_black;
+// }
 
-@include reset();
+// @include reset();
 
 .wrapper {
   @include wrapper();
 }
 
 .debug{
-    @include debug(rgba(0, 0, 0, 0.5), 1px #ff0 solid);
+    @include debug(rgba(0, 0, 0, 0.1), 1px #ff0 solid);
 }
 
-// ///////////////////////////////////////////////////
-h2, .h2{
-    font-size: 2.5rem;
-    text-align: center;
-    margin: 20px 0;
+//////////////////////////////////////////////////////
+// STYLES FOR TOGAS-COUTURE-V3 //////////////////////
+
+.container {
+  @include wrapper();
 }
 
-.h2sub{
-    text-align: center;
-    font-size: 20px;
-    margin: 20px 0;
+// .container {
+//   @include lg(margin-left, 20px);
+//   @include lg(margin-right, 20px);
+// }
+
+.row {
+  @include row-flex();
 }
 
-.profit{
-    padding: 15px 0;
-
-    &__title{
-        color: #000;
-    }
-
-    &__subtitle{
-        color: $color_green;
-    }
+.header {
+  // background: url("img/img-togas-lp/02-header.jpg") no-repeat center center fixed;
+  background: url(../dist/img/img-togas-lp/02-header.jpg) no-repeat center top;
+  padding-top: 50px;
+  padding-bottom: 204px;
+  color: #fff;
 }
 
-.profitItems{
-    @include row-flex();
-    justify-content: space-around;
+.row {
+  justify-content: space-between;
 }
 
-.profitItem{
-    @include col();
-    @include size(4);
-    @include size-md(6);
-    @include size-sm(12);
-
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-    &__img{
-        border-radius: 50%;
-    }
-    
-    &__subtitle{
-        color: #000;
-        font-size: 1.5rem;
-        margin: 3px 0;
-
-        // @include xs(color: #000);
-        //     @include xs(background: #fff);
-        //     @include xs(margin: 20px auto);
-        //     @include xs(padding: 10px 0);
-        //     @include xs(max-width: 200px);
-        
-    }
-
-    &__text{
-        font-size: 16px;
-        color: #d94948;
-    }
+.justify-content-center {
+  justify-content: center;
 }
 
+.logo {
+  @include col();
+  @include size(2);
 
-
-// //////////////////////////////////////////////////
-
-
-
-.main {
-	@include row-flex();
+  display: block;
+  width: 147px;
 }
 
-.some {
-	@include col();
-    @include size(4);
-    @include size-md(12);
-    @include size-sm(12);
-	background-color: gold; 	
+.hamburger {
+  @include col();
+  @include size(1);
+
+  width: 24px;
+  cursor: pointer;
 }
 
-.other {
-	@include col();
-    @include size(4);
-    @include size-md(12);
-    @include size-sm(12);
- background-color: grey;
+.hamburger span {
+  background: #fff;
+  display: block;
+  height: 2px;
+  margin-bottom: 5px;
 }
 
-.third {
-    @include col();
-    @include size(4);
-    @include size-md(12);
-    @include size-sm(12);
- background-color: green;
- 
+.offer {
+  margin-top: 170px;
+  text-align: center;
 
+  &__title {
+    font-size: 52px;
+    font-weight: 300;
+    color: #fff;
+
+    @include sm(font-size, 40px);
+    @include xs(font-size, 25px)
+  }
 }
 
+.offer__form {
+
+  display: flex;
+  margin-top: 24px;
+
+  @include xs(flex-direction, column);
+
+
+  & input {
+    background: #fff;
+    border: 0;
+    width: 328px;
+    display: block;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+
+    @include xs(width, auto);
+  }
+  & button {
+    background: #fd4f32;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 124px;
+    padding: 10px 0;
+    cursor: pointer;
+    display: block;
+    border: none;
+
+    @include xs(width, auto);
+  }
+}
