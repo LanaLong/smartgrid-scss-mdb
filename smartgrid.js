@@ -2,14 +2,14 @@ module.exports = {
     outputStyle: 'scss',
     columns: 12,
     offset: '30px',
-    mobileFirst: true,
+    mobileFirst: false,
     container: {
         maxWidth: "950px",
         fields: "30px"
     },
     breakPoints: {
         md: {
-            width: "992px"
+            width: "950px"
         },
         sm: {
             width: "720px",

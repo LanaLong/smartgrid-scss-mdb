@@ -1,6 +1,10 @@
 @import "project.scss";
 @import "smart-grid/smart-grid.scss";
 
+body {
+    // background: $color_black;
+}
+
 @include reset();
 
 .wrapper {
@@ -25,15 +29,14 @@ h2, .h2{
 }
 
 .profit{
-    background: @color_black;
     padding: 15px 0;
 
     &__title{
-        color: #fff;
+        color: #000;
     }
 
     &__subtitle{
-        color: @color_green;
+        color: $color_green;
     }
 }
 
@@ -44,9 +47,9 @@ h2, .h2{
 
 .profitItem{
     @include col();
-    @include size(6);
-    @include size-md(9);
-    @include size-sm(24);
+    @include size(4);
+    @include size-md(6);
+    @include size-sm(12);
 
     text-align: center;
     margin-top: 15px;
@@ -57,17 +60,16 @@ h2, .h2{
     }
     
     &__subtitle{
-        color: #fff;
+        color: #000;
         font-size: 1.5rem;
         margin: 3px 0;
 
-        .xs-block({
-            color: #000;
-            background: #fff;
-            margin: 20px auto;
-            padding: 10px 0;
-            max-width: 200px;
-        });
+        // @include xs(color: #000);
+        //     @include xs(background: #fff);
+        //     @include xs(margin: 20px auto);
+        //     @include xs(padding: 10px 0);
+        //     @include xs(max-width: 200px);
+        
     }
 
     &__text{
@@ -75,68 +77,6 @@ h2, .h2{
         color: #d94948;
     }
 }
-
-.humans{ 
-    background: @color_green;
-    padding: 10px 0;
-
-    h2{
-        color: @color_black;
-    }
-
-    .h2sub{
-        color: #fff;
-    }
-
-    .items{
-        @include row-flex();
-        justify-content: center;
-
-        .item{
-            @include col();
-            @include size(6);
-            @include size-md(10);
-            @include size-sm(12);
-            @include size-xs(20);
-            @include size-xxs(24);
-
-            border-radius: 10px;
-            margin-top: 15px;
-            margin-bottom: 15px;
-            padding: 10px;
-            text-align: center;
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-
-            img{
-                margin: 10px auto;
-                width: 90%;
-                align-self: center;
-            }
-
-            .subtitle{
-                color: #222;
-                font-size: 24px;
-                margin: 10px;
-            }
-
-            .job{
-                margin: auto 10px 10px 10px;
-            }
-
-            .follow{
-                background: #6cc372;
-                color: #fff;
-                font-size: 24px;
-                cursor: pointer;
-                border-radius: 5px;
-                padding: 5px;
-            }
-        }
-    }
-}
-
 
 
 
@@ -149,25 +89,28 @@ h2, .h2{
 }
 
 .some {
-	color: #ff0;
 	@include col();
-	@include size(6);
-  @include size-md(9);
-  @include size-sm(24);
+    @include size(4);
+    @include size-md(12);
+    @include size-sm(12);
 	background-color: gold; 	
 }
 
 .other {
 	@include col();
-	@include size(4);
+    @include size(4);
+    @include size-md(12);
+    @include size-sm(12);
  background-color: grey;
 }
 
 .third {
-	// @include col();
-	// @include size(4);
+    @include col();
+    @include size(4);
+    @include size-md(12);
+    @include size-sm(12);
  background-color: green;
- // @include make-navbar();
+ 
 
 }
 

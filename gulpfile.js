@@ -39,10 +39,10 @@ gulp.task('grid', function(){
     let options = require('./' + config.smartgrid.src);
     smartgrid(config.smartgrid.dest, options);
 
-    // options.offset = '3.15%';
-    // options.breakPoints.xxs.offset = '1%';
-    // options.filename = 'smart-grid-per';
-    // smartgrid(config.smartgrid.dest, options);
+    options.offset = '3.15%';
+    options.breakPoints.xxs.offset = '1%';
+    options.filename = 'smart-grid-per';
+    smartgrid(config.smartgrid.dest, options);
 });
 
 
