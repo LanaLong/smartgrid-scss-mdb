@@ -4,23 +4,29 @@ module.exports = {
     offset: '30px',
     mobileFirst: false,
     container: {
-        maxWidth: "950px",
+        maxWidth: "1140px",
         fields: "30px"
     },
     breakPoints: {
+        xl: {
+            width: "1140px",
+            fields: "30px"
+        },
+
+        lg: {
+            width: "960px",
+            fields: "30px"
+        },
         md: {
-            width: "950px"
+            width: "720px",
+            fields: "20px"
         },
         sm: {
-            width: "720px",
-        	fields: "20px"
+            width: "540px",
+            fields: "15px"
         },
         xs: {
-            width: "576px",
-        	fields: "15px",
-        },
-        xxs: {
-        	width: "400px",
+            width: "400px",
             fields: "5px",
             offset: "10px"
         }

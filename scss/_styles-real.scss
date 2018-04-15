@@ -18,30 +18,25 @@
 //////////////////////////////////////////////////////
 // STYLES FOR TOGAS-COUTURE-V3 //////////////////////
 
+.header {
+  background: url(../img/img-togas-lp/02-header.jpg) no-repeat center top;
+  background-size: cover;
+  height: 100%;
+  padding-top: 50px;
+  padding-bottom: 300px;
+  color: #fff;
+}
+
 .container {
   @include wrapper();
 }
 
-// .container {
-//   @include lg(margin-left, 20px);
-//   @include lg(margin-right, 20px);
-// }
 
 .row {
   @include row-flex();
-}
-
-.header {
-  // background: url("img/img-togas-lp/02-header.jpg") no-repeat center center fixed;
-  background: url(../dist/img/img-togas-lp/02-header.jpg) no-repeat center top;
-  padding-top: 50px;
-  padding-bottom: 204px;
-  color: #fff;
-}
-
-.row {
   justify-content: space-between;
 }
+
 
 .justify-content-center {
   justify-content: center;

@@ -1,31 +1,51 @@
 $columns: 12;
 $atom: (100% / $columns);
 
-$break_md: 950px;
-$break_sm: 720px;
-$break_xs: 576px;
-$break_xxs: 400px;
+$break_xl: 1140px;
+$break_lg: 960px;
+$break_md: 720px;
+$break_sm: 540px;
+$break_xs: 400px;
 
 $offset: 3.15%;
+$offset_xl: $offset;
+$offset_lg: $offset;
 $offset_md: $offset;
 $offset_sm: $offset;
-$offset_xs: $offset;
-$offset_xxs: 1%;
+$offset_xs: 1%;
 
 $offset_one_side: ($offset / 2);
+$offset_xl_one_side: ($offset_xl / 2);
+$offset_lg_one_side: ($offset_lg / 2);
 $offset_md_one_side: ($offset_md / 2);
 $offset_sm_one_side: ($offset_sm / 2);
 $offset_xs_one_side: ($offset_xs / 2);
-$offset_xxs_one_side: ($offset_xxs / 2);
 
 $fields: 30px;
-$fields_sm: 20px;
-$fields_xs: 15px;
-$fields_xxs: 5px;
+$fields_xl: 30px;
+$fields_lg: 30px;
+$fields_md: 20px;
+$fields_sm: 15px;
+$fields_xs: 5px;
 
 @mixin wrapper-full(){
     padding-left: $fields;
     padding-right: $fields;
+
+    @include xl-block(){
+        padding-left: $fields_xl;
+        padding-right: $fields_xl;
+    }
+
+    @include lg-block(){
+        padding-left: $fields_lg;
+        padding-right: $fields_lg;
+    }
+
+    @include md-block(){
+        padding-left: $fields_md;
+        padding-right: $fields_md;
+    }
 
     @include sm-block(){
         padding-left: $fields_sm;
@@ -36,20 +56,15 @@ $fields_xxs: 5px;
         padding-left: $fields_xs;
         padding-right: $fields_xs;
     }
-
-    @include xxs-block(){
-        padding-left: $fields_xxs;
-        padding-right: $fields_xxs;
-    }
 }
 
 @mixin row-offsets(){
     margin-left: ($offset_one_side * -1);
     margin-right: ($offset_one_side * -1);
 
-    @include xxs-block(){
-        margin-left: ($offset_xxs_one_side * -1);
-        margin-right: ($offset_xxs_one_side * -1);
+    @include xs-block(){
+        margin-left: ($offset_xs_one_side * -1);
+        margin-right: ($offset_xs_one_side * -1);
     }
 }
 
@@ -57,14 +72,14 @@ $fields_xxs: 5px;
     #{$type}-left: $offset_one_side;
     #{$type}-right: $offset_one_side;
 
-    @include xxs-block(){
-        #{$type}-left: $offset_xxs_one_side;
-        #{$type}-right: $offset_xxs_one_side;
+    @include xs-block(){
+        #{$type}-left: $offset_xs_one_side;
+        #{$type}-right: $offset_xs_one_side;
     }
 }
 
 @mixin wrapper(){
-    max-width: 950px;
+    max-width: 1140px;
     margin: 0 auto;
     @include wrapper-full();
 }
@@ -108,6 +123,14 @@ $fields_xxs: 5px;
     width: $atom * $n - $offset;
 }
 
+@mixin size-xl($n){
+    @include xl(width, $atom * $n - $offset_xl);
+}
+
+@mixin size-lg($n){
+    @include lg(width, $atom * $n - $offset_lg);
+}
+
 @mixin size-md($n){
     @include md(width, $atom * $n - $offset_md);
 }
@@ -118,10 +141,6 @@ $fields_xxs: 5px;
 
 @mixin size-xs($n){
     @include xs(width, $atom * $n - $offset_xs);
-}
-
-@mixin size-xxs($n){
-    @include xxs(width, $atom * $n - $offset_xxs);
 }
 
 @mixin shift($n){
@@ -148,6 +167,58 @@ $fields_xxs: 5px;
 
 @mixin shift-padding-right($n){
     padding-right: $atom * $n + $offset_one_side;
+}
+
+@mixin shift-xl($n){
+    @include xl(margin-left, $atom * $n + $offset_xl_one_side);
+    @include xl(margin-right, $atom * $n + $offset_xl_one_side);
+}
+
+@mixin shift-xl-left($n){
+    @include xl(margin-left, $atom * $n + $offset_xl_one_side);
+}
+
+@mixin shift-xl-right($n){
+    @include xl(margin-right, $atom * $n + $offset_xl_one_side);
+}
+
+@mixin shift-xl-padding($n){
+    @include xl(padding-left, $atom * $n + $offset_xl_one_side);
+    @include xl(padding-right, $atom * $n + $offset_xl_one_side);
+}
+
+@mixin shift-xl-padding-left($n){
+    @include xl(padding-left, $atom * $n + $offset_xl_one_side);
+}
+
+@mixin shift-xl-padding-right($n){
+    @include xl(padding-right, $atom * $n + $offset_xl_one_side);
+}
+
+@mixin shift-lg($n){
+    @include lg(margin-left, $atom * $n + $offset_lg_one_side);
+    @include lg(margin-right, $atom * $n + $offset_lg_one_side);
+}
+
+@mixin shift-lg-left($n){
+    @include lg(margin-left, $atom * $n + $offset_lg_one_side);
+}
+
+@mixin shift-lg-right($n){
+    @include lg(margin-right, $atom * $n + $offset_lg_one_side);
+}
+
+@mixin shift-lg-padding($n){
+    @include lg(padding-left, $atom * $n + $offset_lg_one_side);
+    @include lg(padding-right, $atom * $n + $offset_lg_one_side);
+}
+
+@mixin shift-lg-padding-left($n){
+    @include lg(padding-left, $atom * $n + $offset_lg_one_side);
+}
+
+@mixin shift-lg-padding-right($n){
+    @include lg(padding-right, $atom * $n + $offset_lg_one_side);
 }
 
 @mixin shift-md($n){
@@ -228,30 +299,28 @@ $fields_xxs: 5px;
     @include xs(padding-right, $atom * $n + $offset_xs_one_side);
 }
 
-@mixin shift-xxs($n){
-    @include xxs(margin-left, $atom * $n + $offset_xxs_one_side);
-    @include xxs(margin-right, $atom * $n + $offset_xxs_one_side);
+@mixin xl($name, $value){
+    @media screen and (max-width: $break_xl){
+        #{$name}: $value;
+    }
 }
 
-@mixin shift-xxs-left($n){
-    @include xxs(margin-left, $atom * $n + $offset_xxs_one_side);
+@mixin xl-block(){
+    @media screen and (max-width: $break_xl){
+        @content;
+    }
 }
 
-@mixin shift-xxs-right($n){
-    @include xxs(margin-right, $atom * $n + $offset_xxs_one_side);
+@mixin lg($name, $value){
+    @media screen and (max-width: $break_lg){
+        #{$name}: $value;
+    }
 }
 
-@mixin shift-xxs-padding($n){
-    @include xxs(padding-left, $atom * $n + $offset_xxs_one_side);
-    @include xxs(padding-right, $atom * $n + $offset_xxs_one_side);
-}
-
-@mixin shift-xxs-padding-left($n){
-    @include xxs(padding-left, $atom * $n + $offset_xxs_one_side);
-}
-
-@mixin shift-xxs-padding-right($n){
-    @include xxs(padding-right, $atom * $n + $offset_xxs_one_side);
+@mixin lg-block(){
+    @media screen and (max-width: $break_lg){
+        @content;
+    }
 }
 
 @mixin md($name, $value){
@@ -286,18 +355,6 @@ $fields_xxs: 5px;
 
 @mixin xs-block(){
     @media screen and (max-width: $break_xs){
-        @content;
-    }
-}
-
-@mixin xxs($name, $value){
-    @media screen and (max-width: $break_xxs){
-        #{$name}: $value;
-    }
-}
-
-@mixin xxs-block(){
-    @media screen and (max-width: $break_xxs){
         @content;
     }
 }
@@ -385,7 +442,7 @@ $fields_xxs: 5px;
             > div{
                 @include col();
                 @include size(1);
-                @include size-xxs(1);
+                @include size-xs(1);
                 height: inherit;
                 outline: $outline;
                 background: $background;

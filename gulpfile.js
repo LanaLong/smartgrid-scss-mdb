@@ -40,7 +40,7 @@ gulp.task('grid', function(){
     smartgrid(config.smartgrid.dest, options);
 
     options.offset = '3.15%';
-    options.breakPoints.xxs.offset = '1%';
+    options.breakPoints.xs.offset = '1%';
     options.filename = 'smart-grid-per';
     smartgrid(config.smartgrid.dest, options);
 });
@@ -117,6 +117,7 @@ gulp.task('live-server', function() {
 // Watch on everything
 gulp.task('mdb-go', function() {
   gulp.start('live-server');
+  gulp.watch('./' + config.smartgrid.src, ['grid']);
   gulp.watch("scss/**/*.scss", ['css-compile']);
   // gulp.watch(["dist/css/*.css", "!dist/css/*.min.css"], ['css-minify']);
   // gulp.watch("js/**/*.js", ['js-build']);
