@@ -118,6 +118,7 @@ html, body, header, {
 .third-col {
   @include col();
   @include size(4);
+  @include size-lg(12);
   @include size-md(12);
 
 
@@ -148,3 +149,6 @@ html, body, header, {
   @include col();
   @include size(12);
 }
+
+
+
