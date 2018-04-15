@@ -18,12 +18,13 @@
 //////////////////////////////////////////////////////
 // STYLES FOR TOGAS-COUTURE-V3 //////////////////////
 
+html, body, header, {
+        height: 100%;
+    }
+
 .header {
   background: url(../img/img-togas-lp/02-header.jpg) no-repeat center top;
   background-size: cover;
-  height: 100%;
-  padding-top: 50px;
-  padding-bottom: 300px;
   color: #fff;
 }
 
@@ -31,10 +32,8 @@
   @include wrapper();
 }
 
-
 .row {
   @include row-flex();
-  justify-content: space-between;
 }
 
 
@@ -44,29 +43,29 @@
 
 .logo {
   @include col();
-  @include size(2);
-
-  display: block;
-  width: 147px;
+  @include size(6);
+  @include size-lg(7);
+  @include size-md(8);
+  @include size-sm(12);
 }
 
-.hamburger {
-  @include col();
-  @include size(1);
+// .hamburger {
+//   @include col();
+//   @include size(1);
 
-  width: 24px;
-  cursor: pointer;
-}
+//   width: 24px;
+//   cursor: pointer;
+// }
 
-.hamburger span {
-  background: #fff;
-  display: block;
-  height: 2px;
-  margin-bottom: 5px;
-}
+// .hamburger span {
+//   background: #fff;
+//   display: block;
+//   height: 2px;
+//   margin-bottom: 5px;
+// }
 
 .offer {
-  margin-top: 170px;
+  margin-top: 200px;
   text-align: center;
 
   &__title {
@@ -113,4 +112,39 @@
 
     @include xs(width, auto);
   }
+}
+
+// third-col
+.third-col {
+  @include col();
+  @include size(4);
+  @include size-md(12);
+
+
+}
+
+.first {
+ background: #fff;
+ display: block;
+ color: #000;
+ // height: 20px;
+ // width: 50px; 
+}
+
+.second {
+ display: block;
+ color: #000;
+}
+
+.third {
+ background: #fff;
+ display: block;
+ color: #000;
+ // height: 20px;
+ // width: 50px;
+}
+
+.col-gap {
+  @include col();
+  @include size(12);
 }
