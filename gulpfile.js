@@ -18,15 +18,7 @@ const smartgrid = require('smart-grid');
 
 // config /////////////////////////////////////////////////////////
 const config = {
-    root: './dist/',
-    // html: {
-    //     src: 'index.html'
-    // },
-    // css_less: {
-    //     watch: 'precss/**/*.less', // прослушка и источник это разные файлы
-    //     src: 'precss/+(styles|styles-per|styles-ie9).less',
-    //     dest: './dist/css' // было dest: 'css'
-    // },
+        root: './dist/',
     smartgrid: {
         src: 'smartgrid.js',
         dest: 'scss/smart-grid'
@@ -50,17 +42,23 @@ gulp.task('grid', function(){
 // CSS Tasks
 gulp.task('css-compile', function() {
   gulp.src('scss/**/*.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'nested'}).on('error', sass.logError))
+    .pipe(gcmq())
     .pipe(autoprefixer({
       browsers: ['last 10 versions'],
       cascade: false
     }))
+    .pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('./dist/css/'));
 });
 
 gulp.task('css-minify', function() {
     gulp.src(['./dist/css/*.css', '!dist/css/*.min.css'])
       .pipe(cssmin())
+      .pipe(cleanCSS({ 
+          level: 2
+        })) // минификация файла/ то же самое, что и верхний? cssmin //
       .pipe(rename({suffix: '.min'}))
       .pipe(gulp.dest('./dist/css'))
 });
@@ -115,12 +113,19 @@ gulp.task('live-server', function() {
 });
 
 // Watch on everything
-gulp.task('mdb-go', function() {
+gulp.task('watch', function() {
   gulp.start('live-server');
   gulp.watch('./' + config.smartgrid.src, ['grid']);
-  gulp.watch("scss/**/*.scss", ['css-compile']);
-  // gulp.watch(["dist/css/*.css", "!dist/css/*.min.css"], ['css-minify']);
-  // gulp.watch("js/**/*.js", ['js-build']);
-  // gulp.watch("dist/js/mdb.js", ['js-minify']);
+  gulp.watch("scss/**/*.scss", ['css-compile']); 
+});
+
+// Final build
+gulp.task('build', function() {
+  gulp.start('live-server');
+  gulp.watch('./' + config.smartgrid.src, ['grid']);
+  gulp.watch("scss/**/*.scss", ['css-compile']); 
+  gulp.watch(["dist/css/*.css", "!dist/css/*.min.css"], ['css-minify']); // Minify css
+  gulp.watch("js/**/*.js", ['js-build']);
+  gulp.watch("dist/js/mdb.js", ['js-minify']);
   gulp.watch("**/*", {cwd: './img/'}, ['img-compression']);
 });
