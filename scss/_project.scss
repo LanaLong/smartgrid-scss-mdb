@@ -4,3 +4,91 @@ $color_grey: #f0f0f0;
 $color_red: #eb4f4e;
 
 $por_pr_offset: 155px;
+
+// MENU for TOGAS
+
+.navbar-togas .navbar-brand:hover, .navbar-togas .navbar-brand:focus {
+ color: rgba(255, 255, 255, 1);
+}
+
+.navbar-togas .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 1);
+}
+// color: rgba(180, 146, 86, 1);
+.navbar-togas .navbar-nav .nav-link:hover, .navbar-togas .navbar-nav .nav-link:focus {
+	color: rgba(180, 146, 86, 1);
+}
+//  color: rgba(0, 0, 0, 0.7);
+.navbar-togas .navbar-nav .nav-link.disabled {
+  color: rgba(180, 146, 86, 0.3);
+}
+
+.navbar-togas .navbar-nav .show > .nav-link,
+.navbar-togas .navbar-nav .active > .nav-link,
+.navbar-togas .navbar-nav .nav-link.show,
+.navbar-togas .navbar-nav .nav-link.active {
+ color: rgba(255, 255, 255, 1);
+}
+
+.navbar-togas .navbar-toggler {
+  color: rgba(255, 255, 255, 1);
+  border-color: rgba(255, 255, 255, 1);
+  // border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-togas .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-togas .navbar-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-togas .navbar-text a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.navbar-togas .navbar-text a:hover, .navbar-togas .navbar-text a:focus {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+// My ADD to menu 
+.navbar-nav li:not(:last-child) a:after {
+  content: "|"; 
+  color: #fff; 
+  font-size: 100%; 
+	padding-right: 0px; 
+  padding-left: 18px;
+}
+
+.navbar-nav li:not(:last-child) a:after {
+	@include md-block(){content: ""; }
+	@include md-block(){padding: 0px 0px; }
+
+}
+
+
+// DELETE
+// Работает, но не уходит первый элемент :before
+// .navbar-nav li a:after  {
+//   content: "|"; 
+//   color: #fff; 
+//   font-size: 100%; 
+// 	padding-right: 0px; 
+//   padding-left: 18px;
+// }
+
+
+// .navbar-nav li a:last-child:after {
+// 	content: "";
+// }
+// Работает, но по высоте UL - высокий
+// .navbar-nav li {
+//   border-left: 1px solid #fff;
+// 	padding-right: 10px; 
+//   padding-left: 10px;
+// }
+
+// .navbar-nav li:first-child {
+//   border-left: none;
+// }

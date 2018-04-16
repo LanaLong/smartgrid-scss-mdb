@@ -17,6 +17,10 @@ module.exports = {
             width: "950px",
             fields: "30px"
         },
+        mdadd: { // add for fix "custom-made" & two buttons
+            width: "768px",
+            fields: "20px"
+        },
         md: {
             width: "720px",
             fields: "20px"
