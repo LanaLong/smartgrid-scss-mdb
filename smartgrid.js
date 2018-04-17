@@ -14,15 +14,11 @@ module.exports = {
         },
 
         lg: {
-            width: "950px",
+            width: "991px",
             fields: "30px"
         },
-        mdadd: { // add for fix "custom-made" & two buttons
-            width: "768px",
-            fields: "20px"
-        },
         md: {
-            width: "720px",
+            width: "768px",
             fields: "20px"
         },
         sm: {

@@ -55,6 +55,81 @@
   padding-left: 18px;
 }
 
+/*--------------------
+4.5. Partners Slider
+--------------------*/
+
+.owl-portfolio .owl-controls {
+  position: absolute;
+  left: 0;
+  top: 38%;
+  width: 100%;
+}
+
+.owl-portfolio .owl-controls .owl-nav [class*=owl-] {
+  padding: 8px 17px;
+  background: rgba(0, 0, 0, 0.18);
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+.owl-portfolio .owl-controls .owl-nav [class*=owl-]:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.owl-portfolio .owl-controls .owl-prev {
+  float: left;
+}
+
+.owl-portfolio .owl-controls .owl-next {
+  float: right;
+}
+
+.owl-portfolio-item {
+  text-align: center;
+  display: inline-block;
+}
+
+.partner-logo {
+  height: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.partner-logo img {
+  height: 100%;
+  width: auto !important;
+}
+
+.owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #23AD21;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 30px;
+  height: 5px;
+  margin: 15px 7px 0 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  -webkit-border-radius: 30px;
+  border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #23AD21;
+}
+
 .navbar-togas .navbar-brand:hover,
 .navbar-togas .navbar-brand:focus {
   color: white;
@@ -108,6 +183,81 @@
   font-size: 100%;
   padding-right: 0px;
   padding-left: 18px;
+}
+
+/*--------------------
+4.5. Partners Slider
+--------------------*/
+
+.owl-portfolio .owl-controls {
+  position: absolute;
+  left: 0;
+  top: 38%;
+  width: 100%;
+}
+
+.owl-portfolio .owl-controls .owl-nav [class*=owl-] {
+  padding: 8px 17px;
+  background: rgba(0, 0, 0, 0.18);
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+  font-size: 20px;
+  z-index: 1000;
+}
+
+.owl-portfolio .owl-controls .owl-nav [class*=owl-]:hover {
+  background: #000;
+  color: #fff;
+  text-decoration: none;
+}
+
+.owl-portfolio .owl-controls .owl-prev {
+  float: left;
+}
+
+.owl-portfolio .owl-controls .owl-next {
+  float: right;
+}
+
+.owl-portfolio-item {
+  text-align: center;
+  display: inline-block;
+}
+
+.partner-logo {
+  height: 80px;
+  text-align: center;
+  display: inline-block;
+}
+
+.partner-logo img {
+  height: 100%;
+  width: auto !important;
+}
+
+.owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #23AD21;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 30px;
+  height: 5px;
+  margin: 15px 7px 0 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  -o-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  -webkit-border-radius: 30px;
+  border-radius: 0;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #23AD21;
 }
 
 .wrapper {
@@ -707,7 +857,7 @@ p {
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 991px) {
   .wrapper {
     padding-left: 30px;
     padding-right: 30px;
@@ -735,23 +885,6 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-  .wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .debug > div {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
-
-@media screen and (max-width: 720px) {
   .navbar-nav li:not(:last-child) a:after {
     content: "";
   }
