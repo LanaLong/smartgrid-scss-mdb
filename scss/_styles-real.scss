@@ -49,20 +49,11 @@ html, body, header, {
   @include size-sm(12);
 }
 
-// .hamburger {
-//   @include col();
-//   @include size(1);
-
-//   width: 24px;
-//   cursor: pointer;
-// }
-
-// .hamburger span {
-//   background: #fff;
-//   display: block;
-//   height: 2px;
-//   margin-bottom: 5px;
-// }
+.sublogo {
+  // @include col();
+  // @include size-sm(1);
+  // background-color: $fff;
+}
 
 .offer {
   margin-top: 200px;
