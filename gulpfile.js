@@ -106,6 +106,7 @@ gulp.task('live-server', function() {
       baseDir: "./dist",
       directory: true
     },
+    port: 8090,
     notify: false
   });
 

@@ -19,7 +19,8 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": "^2.6.1",
     "gulp-uncss": "^1.0.6",
-    "smart-grid": "^2.0.1"
+    "smart-grid": "^2.0.1",
+    "ws": "^3.3.3"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
