@@ -1,9 +1,10 @@
 $color_black: #232324;
-$color_green: #6cc372;
-$color_grey: #f0f0f0;
-$color_red: #eb4f4e;
-
 $por_pr_offset: 155px;
+
+p {
+  font-size: 1em;
+  color:#9D9D9C;
+}
 
 // MENU for TOGAS
 
@@ -68,102 +69,5 @@ $por_pr_offset: 155px;
 }
 
 
-// DELETE
-// Работает, но не уходит первый элемент :before
-// .navbar-nav li a:after  {
-//   content: "|"; 
-//   color: #fff; 
-//   font-size: 100%; 
-// 	padding-right: 0px; 
-//   padding-left: 18px;
-// }
 
 
-// .navbar-nav li a:last-child:after {
-// 	content: "";
-// }
-// Работает, но по высоте UL - высокий
-// .navbar-nav li {
-//   border-left: 1px solid #fff;
-// 	padding-right: 10px; 
-//   padding-left: 10px;
-// }
-
-// .navbar-nav li:first-child {
-//   border-left: none;
-// }
-
-/*--------------------
-4.5. Partners Slider
---------------------*/
-
-.owl-portfolio .owl-controls {
-	position: absolute;
-	left: 0;
-	top: 38%;
-	width: 100%;	
-}
-
-.owl-portfolio .owl-controls .owl-nav [class*=owl-] {
-	padding: 8px 17px;
-	background: rgba(0, 0, 0, 0.18);
-	border-radius: 0;
-	margin: 0;
-	font-size: 20px;
-	z-index:1000;
-}
-
-.owl-portfolio .owl-controls .owl-nav [class*=owl-]:hover {
-    background: #000;
-    color: #fff;
-    text-decoration: none;
-}
-
-.owl-portfolio .owl-controls .owl-prev {
-	float: left;
-}
-
-.owl-portfolio .owl-controls .owl-next {
-	float: right;
-}
-
-.owl-portfolio-item {
-	text-align: center;
-	display: inline-block;
-}
-
-.partner-logo {
-	height: 80px;
-	text-align: center;
-	display: inline-block;
-}
-
-.partner-logo img {
-	height: 100%;
-	width: auto !important;
-}
-
-.owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #23AD21;
-}
-
-.owl-theme .owl-dots .owl-dot span {
-    width: 30px;
-    height: 5px;
-    margin: 15px 7px 0 7px;
-    background: #d6d6d6;
-    display: block;
-    -webkit-backface-visibility: visible;
-    -webkit-transition: opacity 200ms ease;
-    -moz-transition: opacity 200ms ease;
-    -ms-transition: opacity 200ms ease;
-    -o-transition: opacity 200ms ease;
-    transition: opacity 200ms ease;
-    -webkit-border-radius: 30px;
-    -moz-border-radius: 30px;
-    border-radius: 0;
-}
-
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
-    background: #23AD21;
-}

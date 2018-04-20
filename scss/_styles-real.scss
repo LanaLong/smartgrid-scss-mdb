@@ -18,21 +18,38 @@
 //////////////////////////////////////////////////////
 // STYLES FOR TOGAS-COUTURE-V3 //////////////////////
 
-html, body, header, {
+html, body, header, #intro {
         height: 100%;
     }
 
-.header {
-  background: url(../img/img-togas-lp/02-header.jpg) no-repeat center top;
+#intro {
+  background: url("/img/img-togas-lp3/slider1-sh.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  color: #fff;
 }
 
-.container {
+/* <!-- SECTION 1.TWO HALF --> *****************************************/
+.txt-under {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+  color: black;
+}
+
+.txt-sub-cm {
+  font-size: 0.8em;
+  color:#9D9D9C;
+}
+
+/* <!-- /SECTION 1.TWO HALF --> *****************************************/
+
+.container-header {
   @include wrapper();
 }
 
-.row {
+.row-header {
   @include row-flex();
 }
 
