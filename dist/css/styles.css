@@ -285,23 +285,6 @@ header,
   width: calc(33.33333% - 30px);
 }
 
-.first {
-  background: #fff;
-  display: block;
-  color: #000;
-}
-
-.second {
-  display: block;
-  color: #000;
-}
-
-.third {
-  background: #fff;
-  display: block;
-  color: #000;
-}
-
 .col-gap {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -310,6 +293,11 @@ header,
   margin-right: 15px;
   width: -webkit-calc(100% - 30px);
   width: calc(100% - 30px);
+}
+
+.row-margin {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 /* BUTTONS TOGAS TOP */

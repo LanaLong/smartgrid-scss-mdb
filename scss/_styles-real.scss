@@ -132,26 +132,7 @@ html, body, header, #intro {
 
 }
 
-.first {
- background: #fff;
- display: block;
- color: #000;
- // height: 20px;
- // width: 50px; 
-}
 
-.second {
- display: block;
- color: #000;
-}
-
-.third {
- background: #fff;
- display: block;
- color: #000;
- // height: 20px;
- // width: 50px;
-}
 
 .col-gap {
   @include col();
@@ -160,3 +141,9 @@ html, body, header, #intro {
 
 
 
+// margins
+
+.row-margin {
+  margin-left: 0px;
+  margin-right: 0px;
+}
