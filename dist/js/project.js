@@ -13,8 +13,8 @@ $(document).ready(function(){
         autoplayTimeout:5000,
         autoplayHoverPause:true,
         nav:true,       
-        navText: ["<img src='/img/img-togas-lp3/left.png'>","<img src='/img/img-togas-lp3/right.png'>"],
-
+        // navText: ["<img src='/img/img-togas-lp3/left.png'>","<img src='/img/img-togas-lp3/right.png'>"],
+        navText: ["<img src='https://media1.togas.com/media/couture/img/img-togas-lp3/left.png'>","<img src='https://media1.togas.com/media/couture/img/img-togas-lp3/right.png'>"],
         mouseDrag: true,
         touchDrag: true,
         pullDrag: true,
@@ -24,13 +24,7 @@ $(document).ready(function(){
         stagePadding: 49,
         smartSpeed: 1000,
 
-        // itemsDesktop : [200,4],
-        // itemsDesktopSmall : [200,2],
-        // itemsTablet: [200,1],
-        // itemsTabletSmall: false,
-        // itemsMobile : [200,1],
-
-        responsiveClass:true,
+       responsiveClass:true,
         responsive:{
             0:{
                 items:1,
