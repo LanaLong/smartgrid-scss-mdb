@@ -1,14 +1,16 @@
+@import "fonts.scss";
+
 /* BUTTONS TOGAS TOP */
 .btn-outline-bronze {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  padding: 0.5rem 0.8rem !important;
+  border-radius: 0rem;
   background-color: transparent;
   border: 1px solid #B49256;
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #B49256;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  border-radius: 0rem;
 }
 
 .btn-outline-bronze:hover {
@@ -40,31 +42,32 @@
 }*/
 
 .btn-fill {
-  color: #B49256 !important;
-  background-color: transparent;
-  border-color: #B49256;
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 2px;
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
   text-transform: uppercase;
-  padding: 1rem 1.4rem;
+  letter-spacing: 3px;
+  color: #fff !important;
+  padding: 0.5rem 0.8rem !important;
   border-radius: 0rem;
+  background-color: #B49256 ;
+  border: 1px solid #B49256;
+
 }
 
 .btn-fill:hover {
-  color: #ffffff !important;
-  background-color: #B49256;
+  color: #B49256 !important;
+  background-color: transparent;
   border: 1px solid #B49256 !important;
 }
 
 .btn-fill-bronze {
-  padding: 1.1rem 1.6rem;
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.7em;
+  padding: 1.3rem 1.6rem;
   color: #ffffff;
   background-color: #B49256 !important;
   border: 1px solid #B49256 !important;
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   text-transform: uppercase;
   border-radius: 0rem;
 }
@@ -75,11 +78,31 @@
   border-color: #B49256 !important;
 }
 
+// BUTTONS #DISCOVER#
+
+.btn-outline-bronze-cm {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #B49256;
+  padding: 1.1rem 1.3rem !important;
+  border-radius: 0rem;
+  background-color: transparent;
+  border: 1px solid #B49256;
+}
+
+.btn-outline-bronze-cm:hover {
+  color: #fff;
+  background-color: #B49256;
+  border-color: #B49256;
+}
+
 /* BUTTONS FOR OUR HISTORY */
 .btn-outline-bronze-h {
   background-color: transparent;
   border: 1px solid #B49256;
-  font-family: DisplayPro;
+  font-family: 'PFRegalDisplayPro-Medium';
   font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 2px;
@@ -131,19 +154,17 @@
 
 /* NAVIGATION TOP*/
 .nav-togas > li > a {
+  font-family: 'PFBagueSansPro-Medium';
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 0.8em;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 0.7em;
+  letter-spacing: 3px;
 }
 
 .nav-togas > li > a:hover {
-  text-transform: uppercase;
   color: #B49256;
-  font-size: 0.8em;
-  font-weight: 500;
-  letter-spacing: 1px;
+  font-size: 0.7em;
+  letter-spacing: 3px;
 }
 
 /* REMOVE BOOTSTRAP NAVBAR SHADOW */
@@ -189,10 +210,9 @@ nav {
 
 
 .section-title {
-  font-family: DisplayPro;
-  font-size: 4em;
-  font-weight: 600;
-  line-height: 1.1em;
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 3.5em;
+  line-height: 1.2em;
   text-transform: uppercase;
 }
 
@@ -206,21 +226,11 @@ nav {
 
 
 .subscript-one {
-  font-size: 0.7em;
-  font-weight: 700;
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
   letter-spacing: 4px;
   color: #B49256;
   text-transform: uppercase;
-  padding-top: 8px;
-}
-
-.subscript-center {
-  font-size: 0.6em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #B49256;
-  text-transform: uppercase;
-  text-align: center;
 }
 
 
@@ -261,17 +271,19 @@ nav {
 /* SECTION BLACK STYLES */
 .section-black-title {
   text-transform: uppercase;
-  font-family: DisplayPro;
-  font-size: 2.2em;
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 2.3em;
   color: #fff;
-  font-weight: 500;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
+  line-height: 1.1em;
 }
 
 .section-black-text {
+  font-family: 'PFBagueSansPro-Light';
   font-size: 1em;
-  color: #B49256;
+  letter-spacing: 1px;
   font-weight: normal;
+  color: #B49256;  
 }
 
 .section-black-testemonials {
@@ -289,29 +301,44 @@ text-transform: uppercase;
 
 /* EXPERTS */
 .experts-name {
-  font-family: DisplayPro;
-  font-size: 2em !important;
-  font-weight: 600 !important;
-  line-height: 0.9em;
-  /*letter-spacing: 1px;*/
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 1.9em !important;
+  line-height: 1em;
+  letter-spacing: 2px;
 }
 
 .subscript-center {
+  font-family: 'PFBagueSansPro-Bold';
   font-size: 0.6em;
-  font-weight: 700;
   letter-spacing: 2px;
   color: #B49256;
   text-transform: uppercase;
-  text-align: center;
 }
 
+.card-text {
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1em;
+  color: grey;
+}
 
 /* CONTACTS */
 
+.title-contact {
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 0.8em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.txt-contact {
+  font-family: 'PFRegalDisplayPro-Reg';
+  font-size: 1.1em;
+  color: #232323;
+}
+
 .txt-line {
-  font-family: DisplayPro;
+  font-family: 'PFRegalDisplayPro-Medium';
   font-size: 1.3em;
-  font-weight: 500;
   color: #232323;
 }
 
@@ -333,9 +360,8 @@ text-transform: uppercase;
 }
 
 .section-title-left {
-  font-family: DisplayPro;
+  font-family: 'PFRegalDisplayPro-Medium';
   font-size: 4em;
-  font-weight: 600;
   text-transform: uppercase;
 }
 
@@ -377,8 +403,8 @@ text-transform: uppercase;
  }
 
 .section-title {
+  font-family: 'PFRegalDisplayPro-Medium';
   font-size: 3em;
-  font-weight: 600;
 }
 
 .section-title-center {
@@ -394,11 +420,23 @@ text-transform: uppercase;
 }
 
 .service-title {
-  font-size: 1.2em !important;
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 1.58em !important;
   font-weight: 700 !important;
+  line-height: 1em;
 }
 
+.txt-sub-cm {
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1em !important;
+  line-height: 1.4em !important;
+}
 
+.txt-p {
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1.1em !important;
+  line-height: 1.4em !important;
+}
 
 @media (min-width: 768px) {
 

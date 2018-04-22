@@ -12,17 +12,23 @@ $(document).ready(function(){
         autoplay:true,
         autoplayTimeout:5000,
         autoplayHoverPause:true,
-        nav:true,
-       
+        nav:true,       
+        navText: ["<img src='/img/img-togas-lp3/left.png'>","<img src='/img/img-togas-lp3/right.png'>"],
 
         mouseDrag: true,
         touchDrag: true,
         pullDrag: true,
         freeDrag: false,
 
-        margin: 0,
-        stagePadding: 0,
+        margin: 50,
+        stagePadding: 49,
         smartSpeed: 1000,
+
+        // itemsDesktop : [200,4],
+        // itemsDesktopSmall : [200,2],
+        // itemsTablet: [200,1],
+        // itemsTabletSmall: false,
+        // itemsMobile : [200,1],
 
         responsiveClass:true,
         responsive:{
@@ -32,7 +38,12 @@ $(document).ready(function(){
             },
             600:{
                 items:2,
-                nav:false
+                nav:true
+            },
+
+            900:{
+                items:3,
+                nav:true
             },
             1000:{
                 items:4,
@@ -52,7 +63,7 @@ $(document).ready(function(){
         // checkVisibility: true,
 
         autoplay:true,
-        autoplayTimeout:4000,
+        autoplayTimeout:5000,
         autoplayHoverPause:true,
         nav: false,
         slideTransition: 'fadeOut',
@@ -68,14 +79,41 @@ $(document).ready(function(){
         animateOut: 'fadeOut',
         // animateIn: 'flipInX',
         
-        margin:30,
+        margin:100,
         stagePadding:30,
         smartSpeed: 150
+  });
+});
 
-      
 
 
-    
+$(document).ready(function(){
+  $("#modal-slider").owlCarousel({
+
+        items: 3,
+        loop: true,
+        // checkVisibility: true,
+
+        autoplay:true,
+        autoplayTimeout:4000,
+        autoplayHoverPause:true,
+        nav: true,
+        slideTransition: 'fadeOut',
+       
+
+        mouseDrag: true,
+        touchDrag: true,
+        pullDrag: true,
+        freeDrag: false,
+
+        singleItem: true,
+
+        animateOut: 'fadeOut',
+        // animateIn: 'flipInX',
+        
+        // margin:100,
+        // stagePadding:30,
+        // smartSpeed: 150
 
   });
 });

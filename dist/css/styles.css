@@ -60,6 +60,490 @@ p {
   padding-left: 18px;
 }
 
+@font-face {
+  font-family: 'PFRegalDisplayPro-Reg';
+  src: url("/font/pf-togas/PFRegalDisplayPro-Reg_0.eot");
+  src: local("☺"), url("/font/pf-togas/PFRegalDisplayPro-Reg_0.woff") format("woff"), url("/font/pf-togas/PFRegalDisplayPro-Reg_0.ttf") format("truetype"), url("/font/pf-togas/PFRegalDisplayPro-Reg_0.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFRegalDisplayPro-Medium';
+  src: url("/font/pf-togas/PFRegalDisplayPro-Medium_1.eot");
+  src: local("☺"), url("/font/pf-togas/PFRegalDisplayPro-Medium_1.woff") format("woff"), url("/font/pf-togas/PFRegalDisplayPro-Medium_1.ttf") format("truetype"), url("/font/pf-togas/PFRegalDisplayPro-Medium_1.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  src: url("/font/pf-togas/PFRegalDisplayPro-MedItalic_0.eot");
+  src: local("☺"), url("/font/pf-togas/PFRegalDisplayPro-MedItalic_0.woff") format("woff"), url("/font/pf-togas/PFRegalDisplayPro-MedItalic_0.ttf") format("truetype"), url("/font/pf-togas/PFRegalDisplayPro-MedItalic_0.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBagueSansPro-Medium';
+  src: url("/font/pf-togas/PFBagueSansPro-Medium_1.eot");
+  src: local("☺"), url("/font/pf-togas/PFBagueSansPro-Medium_1.woff") format("woff"), url("/font/pf-togas/PFBagueSansPro-Medium_1.ttf") format("truetype"), url("/font/pf-togas/PFBagueSansPro-Medium_1.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBagueSansPro-Light';
+  src: url("/font/pf-togas/PFBagueSansPro-Light_1.eot");
+  src: local("☺"), url("/font/pf-togas/PFBagueSansPro-Light_1.woff") format("woff"), url("/font/pf-togas/PFBagueSansPro-Light_1.ttf") format("truetype"), url("/font/pf-togas/PFBagueSansPro-Light_1.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBagueSansPro-Bold';
+  src: url("/font/pf-togas/PFBagueSansPro-Bold_1.eot");
+  src: local("☺"), url("/font/pf-togas/PFBagueSansPro-Bold_1.woff") format("woff"), url("/font/pf-togas/PFBagueSansPro-Bold_1.ttf") format("truetype"), url("/font/pf-togas/PFBagueSansPro-Bold_1.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* BUTTONS TOGAS TOP */
+
+.btn-outline-bronze {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+  padding: 0.5rem 0.8rem !important;
+  -webkit-border-radius: 0rem;
+  border-radius: 0rem;
+  background-color: transparent;
+  border: 1px solid #B49256;
+}
+
+.btn-outline-bronze:hover {
+  color: #fff;
+  background-color: #B49256;
+  border-color: #B49256;
+}
+
+/*.btn-outline-bronze:focus, .btn-outline-bronze.focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}
+*/
+
+.btn-outline-bronze.disabled,
+.btn-outline-bronze:disabled {
+  color: #B49256;
+  color: #B49256;
+  background-color: transparent;
+}
+
+.btn-outline-bronze:not(:disabled):not(.disabled):active,
+.btn-outline-bronze:not(:disabled):not(.disabled).active,
+.show > .btn-outline-bronze.dropdown-toggle {
+  color: #fff;
+  background-color: #B49256;
+  border-color: #B49256;
+}
+
+/*.btn-outline-bronze:not(:disabled):not(.disabled):active:focus, .btn-outline-bronze:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-bronze.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}*/
+
+.btn-fill {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff !important;
+  padding: 0.5rem 0.8rem !important;
+  -webkit-border-radius: 0rem;
+  border-radius: 0rem;
+  background-color: #B49256;
+  border: 1px solid #B49256;
+}
+
+.btn-fill:hover {
+  color: #B49256 !important;
+  background-color: transparent;
+  border: 1px solid #B49256 !important;
+}
+
+.btn-fill-bronze {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.7em;
+  padding: 1.3rem 1.6rem;
+  color: #ffffff;
+  background-color: #B49256 !important;
+  border: 1px solid #B49256 !important;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  -webkit-border-radius: 0rem;
+  border-radius: 0rem;
+}
+
+.btn-fill-bronze:hover {
+  color: #FFFFFF;
+  background-color: transparent !important;
+  border-color: #B49256 !important;
+}
+
+.btn-outline-bronze-cm {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #B49256;
+  padding: 1.1rem 1.3rem !important;
+  -webkit-border-radius: 0rem;
+  border-radius: 0rem;
+  background-color: transparent;
+  border: 1px solid #B49256;
+}
+
+.btn-outline-bronze-cm:hover {
+  color: #fff;
+  background-color: #B49256;
+  border-color: #B49256;
+}
+
+/* BUTTONS FOR OUR HISTORY */
+
+.btn-outline-bronze-h {
+  background-color: transparent;
+  border: 1px solid #B49256;
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #B49256;
+  text-transform: uppercase;
+}
+
+.btn-fill-bronze-h {
+  padding: 1.1rem 1.6rem;
+  color: #ffffff;
+  background-color: #B49256;
+  border: 1px solid #B49256;
+  font-size: 0.7em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.btn-outline-bronze-h:hover {
+  color: #fff;
+  background-color: #B49256;
+  border-color: #B49256;
+}
+
+/*.btn-outline-bronze-h:focus, .btn-outline-bronze-h.focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}*/
+
+.btn-outline-bronze-h.disabled,
+.btn-outline-bronze-h:disabled {
+  color: #B49256;
+  color: #B49256;
+  background-color: transparent;
+}
+
+.btn-outline-bronze-h:not(:disabled):not(.disabled):active,
+.btn-outline-bronze-h:not(:disabled):not(.disabled).active,
+.show > .btn-outline-bronze-h.dropdown-toggle {
+  color: #fff;
+  background-color: #B49256;
+  border-color: #B49256;
+}
+
+/*.btn-outline-bronze-h:not(:disabled):not(.disabled):active:focus, .btn-outline-bronze-h:not(:disabled):not(.disabled).active:focus,
+.show > .btn-outline-bronze-h.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
+}*/
+
+/* NAVIGATION TOP*/
+
+.nav-togas > li > a {
+  font-family: 'PFBagueSansPro-Medium';
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.7em;
+  letter-spacing: 3px;
+}
+
+.nav-togas > li > a:hover {
+  color: #B49256;
+  font-size: 0.7em;
+  letter-spacing: 3px;
+}
+
+/* REMOVE BOOTSTRAP NAVBAR SHADOW */
+
+nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar .container-fluid {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar .navbar-collapse {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar .navbar-nav {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-default {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+/* HR white */
+
+.line-top {
+  border: none;
+  /* Убираем границу для браузера Firefox */
+  color: #ffffff;
+  /* Цвет линии для остальных браузеров */
+  background-color: #ffffff;
+  /* Цвет линии для браузера Firefox и Opera */
+  height: 1px;
+  /* Толщина линии */
+  margin-top: 2em;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.section-title {
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 3.5em;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+
+.section-title-center {
+  font-family: DisplayPro;
+  font-size: 4em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.subscript-one {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
+  letter-spacing: 4px;
+  color: #B49256;
+  text-transform: uppercase;
+}
+
+.decor-line {
+  width: 150px;
+}
+
+.bg-grey {
+  background: #F7F7F7;
+}
+
+.bg-section-black {
+  background-color: #232323;
+}
+
+.decor-line {
+  width: 150px;
+}
+
+.service-title {
+  font-family: DisplayPro;
+  font-size: 1.1em;
+  font-weight: 800;
+  /*  font-size: 1.1em !important;
+  font-weight: 800 !important;*/
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.card-img-top-tg {
+  width: 100%;
+  -webkit-border-top-left-radius: 0;
+  border-top-left-radius: 0;
+  -webkit-border-top-right-radius: 0;
+  border-top-right-radius: 0;
+  /*  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);*/
+}
+
+/* SECTION BLACK STYLES */
+
+.section-black-title {
+  text-transform: uppercase;
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 2.3em;
+  color: #fff;
+  letter-spacing: 4px;
+  line-height: 1.1em;
+}
+
+.section-black-text {
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1em;
+  letter-spacing: 1px;
+  font-weight: normal;
+  color: #B49256;
+}
+
+.section-black-testemonials {
+  font-size: 1em;
+  color: #fff;
+  font-weight: 500;
+}
+
+.subscript-name {
+  text-transform: uppercase;
+  font-size: 0.9em;
+  color: #B49256;
+  font-weight: 500;
+}
+
+/* EXPERTS */
+
+.experts-name {
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 1.9em !important;
+  line-height: 1em;
+  letter-spacing: 2px;
+}
+
+.subscript-center {
+  font-family: 'PFBagueSansPro-Bold';
+  font-size: 0.6em;
+  letter-spacing: 2px;
+  color: #B49256;
+  text-transform: uppercase;
+}
+
+.card-text {
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1em;
+  color: grey;
+}
+
+/* CONTACTS */
+
+.title-contact {
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 0.8em;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.txt-contact {
+  font-family: 'PFRegalDisplayPro-Reg';
+  font-size: 1.1em;
+  color: #232323;
+}
+
+.txt-line {
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 1.3em;
+  color: #232323;
+}
+
+.border-bronze {
+  padding: 0.5rem 0.6rem 0.8rem 0.8rem;
+  border: 1px solid #B49256;
+}
+
+.btn-lx,
+.btn-group-lx > .btn {
+  padding: 1rem 1.5rem;
+  -webkit-border-radius: 0rem;
+  border-radius: 0rem;
+}
+
+/* TESTSPY BS4 */
+
+.testspy {
+  height: 200px;
+  overflow-y: scroll;
+  /*overflow: hidden;*/
+}
+
+.section-title-left {
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 4em;
+  text-transform: uppercase;
+}
+
+.section-title-center {
+  font-family: DisplayPro;
+  font-size: 4em;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.title-year {
+  font-family: DisplayPro;
+  font-size: 1.2em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* BUTTONS FOR OUR HISTORY */
+
+.btn-outline-bronze-h {
+  background-color: transparent;
+  border: 1px solid #B49256;
+  font-family: DisplayPro;
+  font-size: 1.2em;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #B49256;
+  text-transform: uppercase;
+  -webkit-border-radius: 0rem !important;
+  border-radius: 0rem !important;
+}
+
+.service-title {
+  font-family: 'PFRegalDisplayPro-Medium';
+  font-size: 1.58em !important;
+  font-weight: 700 !important;
+  line-height: 1em;
+}
+
+.txt-sub-cm {
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1em !important;
+  line-height: 1.4em !important;
+}
+
+.txt-p {
+  font-family: 'PFBagueSansPro-Light';
+  font-size: 1.1em !important;
+  line-height: 1.4em !important;
+}
+
 p {
   font-size: 1em;
   color: #9D9D9C;
@@ -118,6 +602,164 @@ p {
   font-size: 100%;
   padding-right: 0px;
   padding-left: 18px;
+}
+
+@font-face {
+  font-family: 'PFRegalDisplayPro-Reg';
+  src: url("/font/pf-togas/PFRegalDisplayPro-Reg_0.eot");
+  src: local("☺"), url("/font/pf-togas/PFRegalDisplayPro-Reg_0.woff") format("woff"), url("/font/pf-togas/PFRegalDisplayPro-Reg_0.ttf") format("truetype"), url("/font/pf-togas/PFRegalDisplayPro-Reg_0.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFRegalDisplayPro-Medium';
+  src: url("/font/pf-togas/PFRegalDisplayPro-Medium_1.eot");
+  src: local("☺"), url("/font/pf-togas/PFRegalDisplayPro-Medium_1.woff") format("woff"), url("/font/pf-togas/PFRegalDisplayPro-Medium_1.ttf") format("truetype"), url("/font/pf-togas/PFRegalDisplayPro-Medium_1.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  src: url("/font/pf-togas/PFRegalDisplayPro-MedItalic_0.eot");
+  src: local("☺"), url("/font/pf-togas/PFRegalDisplayPro-MedItalic_0.woff") format("woff"), url("/font/pf-togas/PFRegalDisplayPro-MedItalic_0.ttf") format("truetype"), url("/font/pf-togas/PFRegalDisplayPro-MedItalic_0.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBagueSansPro-Medium';
+  src: url("/font/pf-togas/PFBagueSansPro-Medium_1.eot");
+  src: local("☺"), url("/font/pf-togas/PFBagueSansPro-Medium_1.woff") format("woff"), url("/font/pf-togas/PFBagueSansPro-Medium_1.ttf") format("truetype"), url("/font/pf-togas/PFBagueSansPro-Medium_1.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBagueSansPro-Light';
+  src: url("/font/pf-togas/PFBagueSansPro-Light_1.eot");
+  src: local("☺"), url("/font/pf-togas/PFBagueSansPro-Light_1.woff") format("woff"), url("/font/pf-togas/PFBagueSansPro-Light_1.ttf") format("truetype"), url("/font/pf-togas/PFBagueSansPro-Light_1.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PFBagueSansPro-Bold';
+  src: url("/font/pf-togas/PFBagueSansPro-Bold_1.eot");
+  src: local("☺"), url("/font/pf-togas/PFBagueSansPro-Bold_1.woff") format("woff"), url("/font/pf-togas/PFBagueSansPro-Bold_1.ttf") format("truetype"), url("/font/pf-togas/PFBagueSansPro-Bold_1.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+ul li {
+  list-style: none;
+}
+
+caption,
+th {
+  text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+sup {
+  vertical-align: text-top;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+legend {
+  color: #000;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 .wrapper {
@@ -183,15 +825,11 @@ header,
 /* <!-- SECTION 1.TWO HALF --> *****************************************/
 
 .txt-under {
-  font-size: 20px;
-  font-style: italic;
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  font-size: 1.6em;
   font-weight: 600;
+  line-height: 1.2em;
   color: black;
-}
-
-.txt-sub-cm {
-  font-size: 0.8em;
-  color: #9D9D9C;
 }
 
 /* <!-- /SECTION 1.TWO HALF --> *****************************************/
@@ -300,403 +938,29 @@ header,
   margin-right: 0px;
 }
 
-/* BUTTONS TOGAS TOP */
-
-.btn-outline-bronze {
-  background-color: transparent;
-  border: 1px solid #B49256;
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #B49256;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  -webkit-border-radius: 0rem;
-  border-radius: 0rem;
-}
-
-.btn-outline-bronze:hover {
-  color: #fff;
-  background-color: #B49256;
-  border-color: #B49256;
-}
-
-/*.btn-outline-bronze:focus, .btn-outline-bronze.focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-}
-*/
-
-.btn-outline-bronze.disabled,
-.btn-outline-bronze:disabled {
-  color: #B49256;
-  color: #B49256;
-  background-color: transparent;
-}
-
-.btn-outline-bronze:not(:disabled):not(.disabled):active,
-.btn-outline-bronze:not(:disabled):not(.disabled).active,
-.show > .btn-outline-bronze.dropdown-toggle {
-  color: #fff;
-  background-color: #B49256;
-  border-color: #B49256;
-}
-
-/*.btn-outline-bronze:not(:disabled):not(.disabled):active:focus, .btn-outline-bronze:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-bronze.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-}*/
-
-.btn-fill {
-  color: #B49256 !important;
-  background-color: transparent;
-  border-color: #B49256;
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  padding: 1rem 1.4rem;
-  -webkit-border-radius: 0rem;
-  border-radius: 0rem;
-}
-
-.btn-fill:hover {
-  color: #ffffff !important;
-  background-color: #B49256;
-  border: 1px solid #B49256 !important;
-}
-
-.btn-fill-bronze {
-  padding: 1.1rem 1.6rem;
-  color: #ffffff;
-  background-color: #B49256 !important;
-  border: 1px solid #B49256 !important;
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  -webkit-border-radius: 0rem;
-  border-radius: 0rem;
-}
-
-.btn-fill-bronze:hover {
-  color: #FFFFFF;
-  background-color: transparent !important;
-  border-color: #B49256 !important;
-}
-
-/* BUTTONS FOR OUR HISTORY */
-
-.btn-outline-bronze-h {
-  background-color: transparent;
-  border: 1px solid #B49256;
-  font-family: DisplayPro;
-  font-size: 1.2em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #B49256;
-  text-transform: uppercase;
-}
-
-.btn-fill-bronze-h {
-  padding: 1.1rem 1.6rem;
-  color: #ffffff;
-  background-color: #B49256;
-  border: 1px solid #B49256;
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #ffffff;
-  text-transform: uppercase;
-}
-
-.btn-outline-bronze-h:hover {
-  color: #fff;
-  background-color: #B49256;
-  border-color: #B49256;
-}
-
-/*.btn-outline-bronze-h:focus, .btn-outline-bronze-h.focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-}*/
-
-.btn-outline-bronze-h.disabled,
-.btn-outline-bronze-h:disabled {
-  color: #B49256;
-  color: #B49256;
-  background-color: transparent;
-}
-
-.btn-outline-bronze-h:not(:disabled):not(.disabled):active,
-.btn-outline-bronze-h:not(:disabled):not(.disabled).active,
-.show > .btn-outline-bronze-h.dropdown-toggle {
-  color: #fff;
-  background-color: #B49256;
-  border-color: #B49256;
-}
-
-/*.btn-outline-bronze-h:not(:disabled):not(.disabled):active:focus, .btn-outline-bronze-h:not(:disabled):not(.disabled).active:focus,
-.show > .btn-outline-bronze-h.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-}*/
-
-/* NAVIGATION TOP*/
-
-.nav-togas > li > a {
-  text-transform: uppercase;
-  color: #ffffff;
-  font-size: 0.8em;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-.nav-togas > li > a:hover {
-  text-transform: uppercase;
-  color: #B49256;
-  font-size: 0.8em;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-/* REMOVE BOOTSTRAP NAVBAR SHADOW */
-
-nav {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.nav {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.navbar {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.navbar .container-fluid {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.navbar .navbar-collapse {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.navbar .navbar-nav {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-.navbar-default {
-  -webkit-box-shadow: none;
-  box-shadow: none;
-}
-
-/* HR white */
-
-.line-top {
-  border: none;
-  /* Убираем границу для браузера Firefox */
-  color: #ffffff;
-  /* Цвет линии для остальных браузеров */
-  background-color: #ffffff;
-  /* Цвет линии для браузера Firefox и Opera */
-  height: 1px;
-  /* Толщина линии */
-  margin-top: 2em;
-  margin-right: 0;
-  margin-left: 0;
-}
-
-.section-title {
-  font-family: DisplayPro;
-  font-size: 4em;
-  font-weight: 600;
-  line-height: 1.1em;
-  text-transform: uppercase;
-}
-
-.section-title-center {
-  font-family: DisplayPro;
-  font-size: 4em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.subscript-one {
-  font-size: 0.7em;
-  font-weight: 700;
-  letter-spacing: 4px;
-  color: #B49256;
-  text-transform: uppercase;
-  padding-top: 8px;
-}
-
-.subscript-center {
-  font-size: 0.6em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #B49256;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.decor-line {
-  width: 150px;
-}
-
-.bg-grey {
-  background: #F7F7F7;
-}
-
-.bg-section-black {
-  background-color: #232323;
-}
-
-.decor-line {
-  width: 150px;
-}
-
-.service-title {
-  font-family: DisplayPro;
-  font-size: 1.1em;
-  font-weight: 800;
-  /*  font-size: 1.1em !important;
-  font-weight: 800 !important;*/
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-.card-img-top-tg {
-  width: 100%;
-  -webkit-border-top-left-radius: 0;
-  border-top-left-radius: 0;
-  -webkit-border-top-right-radius: 0;
-  border-top-right-radius: 0;
-  /*  border-top-left-radius: calc(0.25rem - 1px);
-  border-top-right-radius: calc(0.25rem - 1px);*/
-}
-
-/* SECTION BLACK STYLES */
-
-.section-black-title {
-  text-transform: uppercase;
-  font-family: DisplayPro;
-  font-size: 2.2em;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-
-.section-black-text {
+.txt-quote {
+  font-family: 'PFBagueSansPro-Light';
   font-size: 1em;
-  color: #B49256;
-  font-weight: normal;
-}
-
-.section-black-testemonials {
-  font-size: 1em;
-  color: #fff;
-  font-weight: 500;
+  color: #fff !important;
 }
 
 .subscript-name {
-  text-transform: uppercase;
-  font-size: 0.9em;
-  color: #B49256;
-  font-weight: 500;
-}
-
-/* EXPERTS */
-
-.experts-name {
-  font-family: DisplayPro;
-  font-size: 2em !important;
-  font-weight: 600 !important;
-  line-height: 0.9em;
-  /*letter-spacing: 1px;*/
-}
-
-.subscript-center {
+  font-family: 'PFBagueSansPro-Bold';
   font-size: 0.6em;
-  font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
+}
+
+#top {
+  background-image: url("/img/img-togas-lp3/arr.svg") no-repeat;
+  width: 50px;
+  height: 50px;
+  bottom: 100px;
+  position: fixed;
+  right: 100px;
+  cursor: pointer;
+  display: none;
+  font-size: 150%;
   color: #B49256;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-/* CONTACTS */
-
-.txt-line {
-  font-family: DisplayPro;
-  font-size: 1.3em;
-  font-weight: 500;
-  color: #232323;
-}
-
-.border-bronze {
-  padding: 0.5rem 0.6rem 0.8rem 0.8rem;
-  border: 1px solid #B49256;
-}
-
-.btn-lx,
-.btn-group-lx > .btn {
-  padding: 1rem 1.5rem;
-  -webkit-border-radius: 0rem;
-  border-radius: 0rem;
-}
-
-/* TESTSPY BS4 */
-
-.testspy {
-  height: 200px;
-  overflow-y: scroll;
-  /*overflow: hidden;*/
-}
-
-.section-title-left {
-  font-family: DisplayPro;
-  font-size: 4em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.section-title-center {
-  font-family: DisplayPro;
-  font-size: 4em;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-
-.title-year {
-  font-family: DisplayPro;
-  font-size: 1.2em;
-  font-weight: 600;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-/* BUTTONS FOR OUR HISTORY */
-
-.btn-outline-bronze-h {
-  background-color: transparent;
-  border: 1px solid #B49256;
-  font-family: DisplayPro;
-  font-size: 1.2em;
-  font-weight: 700;
-  letter-spacing: 2px;
-  color: #B49256;
-  text-transform: uppercase;
-  -webkit-border-radius: 0rem !important;
-  border-radius: 0rem !important;
-}
-
-.service-title {
-  font-size: 1.2em !important;
-  font-weight: 700 !important;
 }
 
 @media screen and (max-width: 1140px) {
@@ -792,8 +1056,8 @@ nav {
   }
 
   .section-title {
+    font-family: 'PFRegalDisplayPro-Medium';
     font-size: 3em;
-    font-weight: 600;
   }
 
   .section-title-center {
