@@ -544,6 +544,10 @@ nav {
   line-height: 1.4em !important;
 }
 
+.img-wrapper {
+  background-color: #232323;
+}
+
 p {
   font-size: 1em;
   color: #9D9D9C;

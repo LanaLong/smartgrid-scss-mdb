@@ -442,3 +442,17 @@ text-transform: uppercase;
 
 
 }
+
+// STYLES FOR COLLAPSED ELEMENTS
+// [data-toggle="collapse"] .fa:before {  
+//   content: "\f139";
+// }
+
+// [data-toggle="collapse"].collapsed .fa:before {
+//   content: "\f13a";
+// }
+
+// MODAL FOR FAbrics
+.img-wrapper {
+  background-color: #232323;
+}
