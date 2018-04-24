@@ -544,6 +544,72 @@ nav {
   line-height: 1.4em !important;
 }
 
+.modal-bg {
+  background-image: url("/img/img-togas-lp3/form.png");
+}
+
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: transparent;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+}
+
+.modal-dialog {
+  max-width: 770px;
+}
+
+.modal-dialog .modal-content {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  margin-top: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-header-togas-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.txt-inner {
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  font-size: 1.7em !important;
+  color: grey;
+}
+
+.modal-title {
+  z-index: 1060;
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  font-size: 1.7em;
+  color: white;
+  letter-spacing: 4px;
+  margin-top: 40px;
+}
+
+.modal-footer-togas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
 .img-wrapper {
   background-color: #232323;
 }

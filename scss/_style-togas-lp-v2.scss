@@ -452,7 +452,92 @@ text-transform: uppercase;
 //   content: "\f13a";
 // }
 
+
+// MODAL TOP :: TALK WITH OUR EXPERTS
+.modal-bg {
+  background-image: url("/img/img-togas-lp3/form.png");
+}
+
+.modal-content {
+  position: relative;
+  // display: -webkit-box;
+  // display: -ms-flexbox;
+  display: flex;
+  // -webkit-box-orient: vertical;
+  // -webkit-box-direction: normal;
+  // -ms-flex-direction: column;
+  // flex-direction: column;
+  width: 100%;
+  // pointer-events: auto;
+  // background-color: #fff;
+  background-color: transparent;
+  background-clip: border-box;
+  // border: 1px solid rgba(0, 0, 0, 0.2);
+  // border-radius: 0.3rem;
+  // outline: 0;
+}
+
+.modal-dialog {
+  max-width: 770px;
+}
+
+.modal-dialog .modal-content {
+  box-shadow: none;
+  margin-top: 220px;
+  // margin: 200px auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal-header-togas-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 1rem;
+  // lign-height: 4em;
+  // height: 150%;
+  // border-bottom: 1px solid #e9ecef;
+  // border-top-left-radius: 0.3rem;
+  // border-top-right-radius: 0.3rem;
+}
+
+.txt-inner {
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  font-size: 1.7em !important;
+  color: grey;
+}
+
+.modal-title {
+  z-index: 1060;
+  font-family: 'PFRegalDisplayPro-MedItalic';
+  font-size: 1.7em;
+  color: white;
+  letter-spacing: 4px;
+  margin-top: 40px;
+}
+
+.modal-footer-togas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  // -webkit-box-align: center;
+  // -ms-flex-align: center;
+  // align-items: center;
+  // -webkit-box-pack: end;
+  // -ms-flex-pack: end;
+  // justify-content: flex-end;
+  // padding: 1rem;
+  // border-top: 1px solid #e9ecef;
+}
+
 // MODAL FOR FAbrics
 .img-wrapper {
   background-color: #232323;
 }
+
