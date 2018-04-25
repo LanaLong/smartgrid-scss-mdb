@@ -455,7 +455,8 @@ text-transform: uppercase;
 
 // MODAL TOP :: TALK WITH OUR EXPERTS
 .modal-bg {
-  background-image: url("/img/img-togas-lp3/form.png");
+  background-image: url(/img/img-togas-lp3/form.png);
+  // принудительный абсолютный путь, т.к. с относительным не подгружается(
 }
 
 .modal-content {
@@ -469,7 +470,7 @@ text-transform: uppercase;
   // flex-direction: column;
   width: 100%;
   // pointer-events: auto;
-  // background-color: #fff;
+  background-color: #fff;
   background-color: transparent;
   background-clip: border-box;
   // border: 1px solid rgba(0, 0, 0, 0.2);
@@ -479,6 +480,7 @@ text-transform: uppercase;
 
 .modal-dialog {
   max-width: 770px;
+  background-color: #fff;
 }
 
 .modal-dialog .modal-content {
@@ -517,7 +519,7 @@ text-transform: uppercase;
   z-index: 1060;
   font-family: 'PFRegalDisplayPro-MedItalic';
   font-size: 1.7em;
-  color: white;
+  color: #232323;
   letter-spacing: 4px;
   margin-top: 40px;
 }
